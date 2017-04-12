@@ -1,4 +1,4 @@
-# Traffic Sign Classifier - Udacity Selfdriving car Project 2
+# Traffic Sign Classifier - Udacity Self Driving Car Project 2
 
 ### Loading Data:
 
