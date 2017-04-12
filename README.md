@@ -1,10 +1,10 @@
-##* Traffic Sign Classifier - Udacity Selfdriving car Project 2
+# Traffic Sign Classifier - Udacity Selfdriving car Project 2
 
-# Loading Data:
+### Loading Data:
 
 In this step we loaded the pickled data provided. The training, validation and test data are in the files train.p, valid.p and test.p. This data is presemt in the folder traffic-signs-data.
 
-# Dataset Summary and Analysis:
+### Dataset Summary and Analysis:
 
 In this step the data is analysed. The number of train, valid, test data and number of classes are counted and are printed.
 
@@ -22,13 +22,13 @@ The data is then visualized using a bar chart. The number of images per class is
 From the chart it is evident that the number of images for certain calsses is larger in number compared to the others. If the data is trained as it is, it will be bised towards these largers classes and will not be a good data set to train with. For this purposes, the data needs to be augmented.
 
 For augmentation, classes with images less than 750 are considered. The images of this class are rotated by 10, -10, 15 and -15 degrees. These set of 4 rotated images are added 250 times. This increases the image quantity for classes with less than 750 images by 1000. After augmenting the data, it is then visualized using a bar chart. This chart is saved as AugmentedData_Visualization.jpg. The rotated images are saved to original training data set variables. To get access to these images easily (as augmenting the images might take some time) they are saved as X_train.npy and y_train.npy files. These files are loaded if notebook needs to restart and clear output. 
-#* These files are not included in the solution because of their size 
+##### These files are not included in the solution because of their size 
 
-## Preprocessing:
+### Preprocessing:
 
 For preprocessing the data is shuffled and is given as input to the neural network.
 
-## Model Architecture:
+### Model Architecture:
 
 In this step a model is designed and trained to get validation accuracy of more than 93%.
 
